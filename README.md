@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+# React Redux Todo List
 
 ## Sample Images:-
 ![Screenshot (598)](https://user-images.githubusercontent.com/94789421/185742354-04d5d603-3dca-403a-9844-9dbab9c6a92f.png)
