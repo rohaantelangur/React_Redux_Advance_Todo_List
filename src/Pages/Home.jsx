@@ -26,7 +26,7 @@ const Home = () => {
   const fiterByParamTags = (task) => {
     const paramTags = searchParams.getAll("tags");
 
-    if (paramTags.includes("All") || paramTags.length == 0) {
+    if (paramTags.includes("All") || paramTags.length === 0) {
       return task;
     }
 
@@ -63,7 +63,7 @@ const Home = () => {
           </Box>
           {tasks.length &&
             tasks
-              .filter((item) => item.task_Status == "todo")
+              .filter((item) => item.task_Status === "todo")
               .filter(fiterByParamTags)
               .map((item) => {
                 return <TaskCard key={item.id} {...item} />;
@@ -82,7 +82,7 @@ const Home = () => {
           </Box>
           {tasks.length &&
             tasks
-              .filter((item) => item.task_Status == "in-progress")
+              .filter((item) => item.task_Status === "in-progress")
               .filter(fiterByParamTags)
               .map((item) => {
                 return <TaskCard key={item.id} {...item} />;
@@ -101,7 +101,7 @@ const Home = () => {
           </Box>
           {tasks.length &&
             tasks
-              .filter((item) => item.task_Status == "done")
+              .filter((item) => item.task_Status === "done")
               .filter(fiterByParamTags)
               .map((item) => {
                 return <TaskCard key={item.id} {...item} />;

@@ -16,7 +16,6 @@ import {
   useColorModeValue,
   Editable,
   EditablePreview,
-  EditableInput,
   EditableTextarea,
   // Link,
 } from "@chakra-ui/react";
@@ -95,7 +94,7 @@ function Signup() {
 
   const SignupHandler = () => {
     disp(register(state)).then((r) => {
-      if (r == REGISTER_SUCCESS) {
+      if (r === REGISTER_SUCCESS) {
         navigate("/login", { replace: true });
       }
     });

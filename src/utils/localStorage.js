@@ -1,4 +1,3 @@
-import { MotionValue } from "framer-motion";
 
 export const getLocalData = (key) => {
   if (key) {

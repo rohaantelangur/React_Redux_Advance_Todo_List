@@ -56,7 +56,7 @@ const EditPage = () => {
   };
 
   useEffect(() => {
-    if (tasks.length == 0) {
+    if (tasks.length === 0) {
       dispatch(getTasks());
     }
 

@@ -1,7 +1,8 @@
 import { Box, Button, Flex, Stack, Text } from "@chakra-ui/react";
 import React, { useEffect, useState } from "react";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { useSearchParams } from "react-router-dom";
+import { LOGOUT } from "../Redux/AuthReducer/actionTypes";
 import Profile from "./Profile";
 
 const Sidebar = () => {
@@ -19,6 +20,7 @@ const Sidebar = () => {
   const [selectedTags, setSelectedTags] = useState(
     searchParams.getAll("tags") || []
   );
+  const dispatch = useDispatch()
 
   const handleTagChange = (tag) => {
     let newSelectedTags = [...selectedTags];
@@ -104,7 +106,9 @@ const Sidebar = () => {
           </Box>
         </Box>
 
-        <Button>{isAuth && "SignOut"}</Button>
+        <Button onClick={()=>{
+          dispatch({type:LOGOUT})
+        }}>{isAuth && "LOGOUT"}</Button>
       </Stack>
     </Box>
   );

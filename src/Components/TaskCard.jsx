@@ -3,10 +3,8 @@ import {
   Box,
   Checkbox,
   CheckboxGroup,
-  Editable,
   Flex,
   HStack,
-  Stack,
   Text,
 } from "@chakra-ui/react";
 import React, { useState } from "react";
