@@ -1,6 +1,10 @@
 # Getting Started with Create React App
 
 ## Sample Images:-
+![Screenshot (598)](https://user-images.githubusercontent.com/94789421/185742354-04d5d603-3dca-403a-9844-9dbab9c6a92f.png)
+
+![Screenshot (596)](https://user-images.githubusercontent.com/94789421/185742361-79ce13fa-3d40-4e45-b48c-43e6d2deaca2.png)
+
 ![Screenshot (440)](https://user-images.githubusercontent.com/94789421/179446467-65cacd0c-2a57-4c36-b6dc-d00d56ba0ade.png)
 
 ![Screenshot (441)](https://user-images.githubusercontent.com/94789421/179446476-341c13f8-96fc-4f81-b3b0-b249a7e11724.png)
